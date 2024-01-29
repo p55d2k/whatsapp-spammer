@@ -1,10 +1,13 @@
+import os
+os.system("pip install pyautogui requests")
+print("\033c")
+
 import pyautogui
 import platform
 import time
-
 import requests
-# fetch from https://spammer.vercel.app/ and get the raw html
-html = requests.get("https://spammer.vercel.app/").text
+
+html = requests.get("https://declanisautistic.vercel.app/").text
 # find the word in the html
 if html != "true":
   print("you are not allowed to use this program now.")
